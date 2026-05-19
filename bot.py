@@ -7,7 +7,7 @@ from telegram.ext import (
     ContextTypes,
 )
 import os
-import psycopg2
+from psycopg2 import connect
 
 TOKEN = "8931077914:AAH3sS6UTqy7uCb61YIms80hvnnuGOZknNo"
 ADMIN_ID = 7938699279
