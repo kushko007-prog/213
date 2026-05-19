@@ -14,7 +14,7 @@ ADMIN_ID = 7938699279
 
 # Подключение к PostgreSQL
 DATABASE_URL = os.getenv('DATABASE_URL')
-conn = psycopg2.connect(DATABASE_URL)
+conn = connect(DATABASE_URL)
 cursor = conn.cursor()
 
 cursor.execute("""
